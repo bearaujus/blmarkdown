@@ -1,0 +1,3 @@
+include bdmarkdown/*
+include *.md
+include *.txt

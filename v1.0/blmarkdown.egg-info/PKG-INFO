@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: blmarkdown
+Version: 1.0
+Summary: Bear Au Jus Learning Markdown (blmarkdown) is a tool used to help you documenting your learning history in rich and flavored markdown.
+Home-page: https://github.com/bearaujus/blmarkdown
+Author: Bear Au Jus - ジュースとくま
+Author-email: haryobagasasyafah6@gmail.com
+License: MIT
+Keywords: blmarkdown,bearaujus learning markdown,bearaujus markdown,bearaujus learning,bearaujus,learning,markdown,github learning history documentation using python,python,markdown generator,github,documenting learning history
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Natural Language :: English
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# BLMARKDOWN
+Bear Au Jus Learning Markdown (blmarkdown) is a tool used to help you documenting your learning history in rich and flavored markdown.
+> + Github Directory [https://github.com/bearaujus/blmarkdown](https://github.com/bearaujus/blmarkdown)
+> + PyPI [https://pypi.org/project/blmarkdown/](https://pypi.org/project/blmarkdown/)
+
+# Latest Changelog
+Release Date : 09/07/2021 `v1.0`
+> + Initial Commit
+
+# Installation
+Get latest version of blmarkdown
+```
+pip install blmarkdown
+```
+
+# How To Use
+> + Simple Example : [Link](https://github.com/bearaujus/blmarkdown/blob/main/v1.0/examples/example_1.ipynb)
+> + Advanced Example : [Link](https://github.com/bearaujus/blmarkdown/blob/main/v1.0/examples/example_2.ipynb)
+
+# Credit
++ Main Github Page : [https://github.com/bearaujus/](https://github.com/bearaujus/)
++ Linkedin : [https://www.linkedin.com/in/bearaujus/](https://www.linkedin.com/in/bearaujus/)
+
+**Bear Au Jus - ジュースとくま** @2021
+
+
