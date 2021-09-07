@@ -14,9 +14,9 @@ pip install blmarkdown
 ```
 
 # How To Use
-> Simple Example : [Link](https://github.com/bearaujus/learning/tree/main/php/1_basic_php/l01)
+> Simple Example : [Link](https://github.com/bearaujus/blmarkdown/blob/main/v1.0/examples/example_1.ipynb)
 
-> Advanced Example : [Link](https://github.com/bearaujus/learning/tree/main/php/1_basic_php/l01)
+> Advanced Example : [Link](https://github.com/bearaujus/blmarkdown/blob/main/v1.0/examples/example_2.ipynb)
 
 # Credit
 + Main Github Page : [https://github.com/bearaujus/](https://github.com/bearaujus/)
