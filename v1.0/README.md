@@ -1,5 +1,4 @@
-# Latest Changelog
-Release Date : 09/07/2021 `v1.0`
+# Release Date : 09/07/2021 `v1.0`
 > + Initial Commit
 
 # Credit
