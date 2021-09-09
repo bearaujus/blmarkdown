@@ -56,11 +56,11 @@ class Learning:
             self.data.append(LearningData(child))
         elif isinstance(child, list):
             tmp = list()
-            for i in child:
-                if isinstance(child, str):
-                    tmp.append(LearningData(i))
-                elif isinstance(child, LearningData):
-                    tmp.append(i)
+            for data in child:
+                if isinstance(data, LearningData):
+                    tmp.append(data)
+                elif isinstance(data, str):
+                    tmp.append(LearningData(data))
                 else:
                     raise Exception(
                         "data inside a list must an instance of 'LearningData' or 'str'")
