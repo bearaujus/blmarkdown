@@ -4,8 +4,8 @@ Bear Au Jus Learning Markdown (blmarkdown) is a tool used to help you documentin
 > + PyPI [https://pypi.org/project/blmarkdown/](https://pypi.org/project/blmarkdown/)
 
 # Latest Changelog
-Release Date : 09/08/2021 `v2.1`
-> + Bug Fixes
+Release Date : 09/09/2021 `v2.2`
+> + String and List now Available to Added in Learning.add()
 
 # Installation
 Get latest version of blmarkdown
@@ -83,14 +83,14 @@ learning.markdown()
 But, those are just **some of our features** we had. You can look at **List Function** we had, or some **example** we just documented here. **Happy Reading** ! :D
 
 # Examples
-> - Simple [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.1/examples/example_simple.ipynb)
+> - Simple [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.2/examples/example_simple.ipynb)
 
-> - Advanced [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.1/examples/example_advanced.ipynb)
+> - Advanced [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.2/examples/example_advanced.ipynb)
 
 > - Real Life [Link](https://github.com/bearaujus/learning/blob/main/php/1_basic_php/mdgen.ipynb) | [Output Markdown](https://github.com/bearaujus/learning/blob/main/php/1_basic_php/README.MD) | [Output Folder](https://github.com/bearaujus/learning/blob/main/php/1_basic_php) 
 
 # List Function
-## A. Class Learning
+### A. Class Learning
 
 - A.1. Constructor
 ```.py
@@ -105,13 +105,25 @@ def __init__(self, learning_subject_title, credit_name, footer_data=dict()):
 
 - A.2. Add LearningData
 ```.py
-# parameter 'child' is instance of LearningData Class
 def add(self, child):
-        if not isinstance(child, Ld):
-            raise Exception(
-                "'child' must an instance of class 'LearningData'. Example : github.com/bearaujus/blmarkdown")
-        else:
+        if isinstance(child, str):
+            self.data.append(LearningData(child))
+        elif isinstance(child, list):
+            tmp = list()
+            for data in child:
+                if isinstance(data, LearningData):
+                    tmp.append(data)
+                elif isinstance(data, str):
+                    tmp.append(LearningData(data))
+                else:
+                    raise Exception(
+                        "data inside a list must an instance of 'LearningData' or 'str'")
+            self.data = self.data + tmp
+        elif isinstance(child, LearningData):
             self.data.append(child)
+        else:
+            raise Exception(
+                "'child' must an instance of 'LearningData' or 'str' or 'list'")
 ```
 > Return Type : `None`
 ---
@@ -168,7 +180,7 @@ def index(self):
 > Return Type : `Dict`
 ---
 
-## B. Class LearningData
+### B. Class LearningData
 
 - B.1. Constructor
 ```.py

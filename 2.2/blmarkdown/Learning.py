@@ -1,13 +1,13 @@
 from datetime import date
 from blmarkdown.Utill import Utill
 from blmarkdown.App import App
-from blmarkdown.LearningData import LearningData as Ld
+from blmarkdown.LearningData import LearningData
 
 __author__ = 'Haryo Bagas Assyafah'
 __copyright__ = 'Bear Au Jus - ジュースとくま @2021'
 __credits__ = ['Haryo Bagas Assyafah']
 __license__ = "MIT"
-__version__ = "2.1"
+__version__ = "2.2"
 __maintainer__ = "Haryo Bagas Assyafah"
 __email__ = "haryobagasasyafah6@gmail.com"
 __status__ = "Production"
@@ -52,11 +52,24 @@ class Learning:
         return output
 
     def add(self, child):
-        if not isinstance(child, Ld):
-            raise Exception(
-                "'child' must an instance of class 'LearningData'. Example : github.com/bearaujus/blmarkdown")
-        else:
+        if isinstance(child, str):
+            self.data.append(LearningData(child))
+        elif isinstance(child, list):
+            tmp = list()
+            for i in child:
+                if isinstance(child, str):
+                    tmp.append(LearningData(i))
+                elif isinstance(child, LearningData):
+                    tmp.append(i)
+                else:
+                    raise Exception(
+                        "data inside a list must an instance of 'LearningData' or 'str'")
+            self.data = self.data + tmp
+        elif isinstance(child, LearningData):
             self.data.append(child)
+        else:
+            raise Exception(
+                "'child' must an instance of 'LearningData' or 'str' or 'list'")
 
     def preview(self, keep_file_on_complete=False, file_name=''):
         Utill.compile_viewer(self.__generate(),
