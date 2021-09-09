@@ -1,7 +1,7 @@
 # BLMARKDOWN
 Bear Au Jus Learning Markdown (blmarkdown) is a tool used to help you documenting your learning history in rich and flavored markdown.
-> + Github Directory [https://github.com/bearaujus/blmarkdown](https://github.com/bearaujus/blmarkdown)
-> + PyPI [https://pypi.org/project/blmarkdown/](https://pypi.org/project/blmarkdown/)
+> + Github Directory | [Link](https://github.com/bearaujus/blmarkdown)
+> + PyPI | [Link](https://pypi.org/project/blmarkdown/)
 
 # Latest Changelog
 Release Date : 09/09/2021 `v2.3`
@@ -81,11 +81,11 @@ learning.markdown()
 But, those are just **some of our features** we had. You can look at **List Function** we had, or some **example** we just documented here. **Happy Reading** ! :D
 
 # Examples
-> - Simple [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.3/examples/example_simple.ipynb)
+> - Simple | [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.3/examples/example_simple.ipynb)
 
-> - Advanced [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.3/examples/example_advanced.ipynb)
+> - Advanced | [Link](https://github.com/bearaujus/blmarkdown/blob/main/v2.3/examples/example_advanced.ipynb)
 
-> - Real Life [Link](https://github.com/bearaujus/learning/blob/main/php/1_basic_php/mdgen.ipynb) | [Output Markdown](https://github.com/bearaujus/learning/blob/main/php/1_basic_php/README.MD) | [Output Folder](https://github.com/bearaujus/learning/blob/main/php/1_basic_php) 
+> - Real Life | [Link](https://github.com/bearaujus/learning/blob/main/php/1_basic_php/mdgen.ipynb) | [Output Markdown](https://github.com/bearaujus/learning/blob/main/php/1_basic_php/README.MD) | [Output Folder](https://github.com/bearaujus/learning/blob/main/php/1_basic_php) 
 
 # List Function
 ### A. Class Learning
