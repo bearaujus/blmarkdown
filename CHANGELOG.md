@@ -1,8 +1,11 @@
 # Latest Changelog
+Release Date : 09/09/2021 `v2.3`
+> + Bug Fixes
+
+# Older Changelog
 Release Date : 09/09/2021 `v2.2`
 > + String and List now Available to Added in Learning.add()
 
-# Older Changelog
 Release Date : 09/08/2021 `v2.1`
 > + Bug Fixes
 
